@@ -13,11 +13,11 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:padding="5dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toToptOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/btn_trash"
@@ -37,7 +37,7 @@
         android:layout_marginRight="17.5dp"
         android:backgroundTint="#2071f9"
         app:cardCornerRadius="15dp"
-        app:layout_constraintStart_toStartOf="btn_trash"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trash"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.689"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="btn_back" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
 
     <TextView
         android:id="@+id/tv_date"
@@ -71,7 +71,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="et_title"/>
+        app:layout_constraintTop_toBottomOf="@+id/et_title"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -81,9 +81,10 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:background="#808080"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="tv_date"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"/>
 
     <EditText
         android:id="@+id/et_text"
@@ -98,5 +99,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="linearLayout"/>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
